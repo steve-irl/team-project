@@ -1,72 +1,23 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f9;
     margin: 0;
-    background-color: #f4f7f6;
+    padding: 0;
     color: #333;
 }
 header {
-    background: #2c3e50;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-}
-.container {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 20px;
-}
-
-.team-card {
-    background: #fff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.team-card:hover {
-    transform: translateY(-5px);
-}
-
-.leader {
-    border-left: 5px solid #e74c3c; /* Виділяємо лідера */
-}
-
-
-.avatar {
-    width: 70px;
-    height: 70px;
-    background: #3498db;
+    background-color: #4a90e2;
     color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-.info h2 {
-    margin: 0;
-    font-size: 1.4rem;
-}
-
-.role {
-    color: #7f8c8d;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 5px 0;
-}
-
-footer {
+    padding: 30px 20px;
     text-align: center;
-    font-size: 0.8rem;
-    color: #95a5a6;
-    margin-top: 40px;
-    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 1.1em;
 }
