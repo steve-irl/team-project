@@ -1,23 +1,26 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    color: #333;
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
+.team-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
+.team-card .info h2 {
+    margin: 0 0 10px 0;
+    color: #4a90e2;
 }
-
-header p {
-    margin: 5px 0 0 0;
-    font-size: 1.1em;
+.team-card .info p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.5;
 }
