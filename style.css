@@ -268,19 +268,29 @@ select {
 
 
 body.dark {
-    background-color: #1a1a2e;
-    color: #eee;
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
 }
 
-body.dark header {
-    background: #16213e;
+body.dark .site-header {
+    background: rgba(15, 23, 42, 0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-body.dark .team-card {
-    background: #0f3460;
-    color: #eee;
+body.dark .card {
+    background: rgba(30, 41, 59, 0.9);
+    border-color: rgba(255,255,255,0.08);
 }
 
-body.dark .role {
-    color: #a0aec0;
+body.dark .logo {
+    color: #e2e8f0;
+}
+
+body.dark .nav-links a {
+    color: #94a3b8;
+}
+
+body.dark .footer {
+    background: rgba(15, 23, 42, 0.8);
+    color: #94a3b8;
 }
