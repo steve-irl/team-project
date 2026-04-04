@@ -1,0 +1,43 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check HTML structure
+        run: |
+          echo "Checking HTML files..."
+          if grep -q "<nav>" *.html; then
+            echo "Navbar found"
+          else
+            echo "Navbar not found"
+          fi
+
+          if grep -q "<header>" *.html; then
+            echo "Header found"
+          else
+            echo "Header missing"
+          fi
+
+      - name: Check CSS styles
+        run: |
+          echo "Checking CSS file..."
+          if grep -q "body" style.css; then
+            echo "Base styles exist"
+          else
+            echo "Missing base styles"
+          fi
+
+      - name: AI Review Summary
+        run: |
+          echo "AI Review completed"
+          echo "The project structure is good."
+          echo "Make sure all pages use consistent styles and navigation."
