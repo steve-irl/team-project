@@ -3,50 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Владислав Дикий | DevGroup</title>
+    <title>Vlad | Team Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Владислав Дикий</h1>
-        <p>Студент | ХПІ, ІКМ-225а</p>
+    <button class="theme-toggle" onclick="document.body.classList.toggle('dark')">🌙 Тема</button>
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="logo" href="index.html">Team Project</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="svitlana.html">Svitlana</a>
+                <a href="vlad.html">Vlad</a>
+            </nav>
+        </div>
     </header>
-    <main class="container">
-        <section class="team-card">
-            <div class="avatar">V</div>
-            <div class="info">
-                <h2>Про мене</h2>
-                <p class="role">Студент 1 курсу</p>
-                <p>Навчаюсь в НТУ «ХПІ» на спеціальності Комп'ютерні науки. Моделювання, проектування та комп'ютерна графіка. Група ІКМ-225а, форма навчання — онлайн.</p>
+    <main>
+        <section class="profile-section">
+            <div class="container">
+                <div class="card profile-card">
+                    <div class="profile-header">
+                        <div class="avatar">V</div>
+                        <div>
+                            <p class="eyebrow">About Me</p>
+                            <h1>Vladyslav</h1>
+                            <p class="card-role">Student</p>
+                        </div>
+                    </div>
+                    <div class="profile-content">
+                        <p>I am a first-year student at the National Technical University "Kharkiv Polytechnic Institute", studying Computer Science — Modelling, Design and Computer Graphics. My group is IKM-225a, online form of study.</p>
+                        <p>Within the team, I contribute by building my personal page, working with Git and GitHub, making commits, opening pull requests and participating in code review.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="team-card">
-            <div class="avatar">📚</div>
-            <div class="info">
-                <h2>Навчання</h2>
-                <p class="role">НТУ «ХПІ»</p>
-                <p>Інститут комп'ютерного моделювання, прикладної фізики та математики. Вивчаю програмування, веб-розробку та роботу з Git і GitHub.</p>
-            </div>
-        </section>
-        <section class="team-card">
-            <div class="avatar">💻</div>
-            <div class="info">
-                <h2>Інструменти</h2>
-                <p class="role">Що використовую</p>
-                <p>HTML, CSS, Git, GitHub. Працюю у VS Code. Вчуся використовувати GitHub Copilot для розробки.</p>
-            </div>
-        </section>
-        <section class="team-card">
-            <div class="avatar">👥</div>
-            <div class="info">
-                <h2>Команда</h2>
-                <p class="role">DevGroup</p>
-                <p>Працюю в команді зі Світланою Панченко — вона є лідером команди. Беру участь у спільній розробці проекту на GitHub — роблю коміти, пул реквести та код рев'ю.</p>
-            </div>
-        </section>
-        <footer>
-            <a href="index.html">← Повернутись до команди</a>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="container">© 2026 Team Project • University Collaboration</div>
+    </footer>
 </body>
 </html>
