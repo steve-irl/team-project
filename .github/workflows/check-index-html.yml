@@ -6,13 +6,16 @@ on:
 jobs:
   check-and-update:
     runs-on: ubuntu-latest
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 # Можна використовувати v4, вона новіша
+        uses: actions/checkout@v4 
         with:
           fetch-depth: 0
 
